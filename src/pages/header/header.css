@@ -16,10 +16,8 @@
 }
 
 .search-btn {
-    display: inline;
     position: relative;
-    right: 20%;
-    border: 0;
+    right: 15%;
     color: #007bff;
 }
 

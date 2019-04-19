@@ -1,19 +1,22 @@
 import React, {Component} from 'react'
 import HeaderUI from "./headerUI";
 import {connect} from "react-redux";
+import {SEARCH_FOCUS, searchFocus} from "./store/action";
 
 class Header extends Component {
     render() {
-        return <HeaderUI/>
+        return <HeaderUI changeSearchStatus={this.props.changeSearchStatus}/>
     }
 }
 
-const mapStateToProps = (state) => {
-    return {}
-};
+const mapState = (state) => ({
+    focus: state.header.get('focus')
+});
 
-const mapDispatchToProps = (dispatch) => {
-    return {}
-};
+const mapDispatch = (dispatch) => ({
+    changeSearchStatus() {
+        dispatch(searchFocus()); //must be a function
+    }
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapState, mapDispatch)(Header);

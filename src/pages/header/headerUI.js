@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFeather} from "@fortawesome/free-solid-svg-icons/faFeather";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
-const HeaderUI = () => {
+const HeaderUI = (props) => {
     return (
         <Fragment>
             <nav className="navbar navbar-expand">
@@ -16,13 +16,12 @@ const HeaderUI = () => {
                             <a className="nav-link" href="/">Home</a>
                         </li>
                     </ul>
-                    <form className="form-inline my-2">
-                        <input className="form-control mr-sm-2 my-search" type="search" placeholder="Search"
-                               aria-label="Search"/>
-                        <button className="search-btn" type="submit">
+                    <div>
+                        <input className="my-search" placeholder="Search"/>
+                        <span className="search-btn" onClick={props.changeSearchStatus}>
                             <FontAwesomeIcon icon={faSearch}/>
-                        </button>
-                    </form>
+                        </span>
+                    </div>
                 </div>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">

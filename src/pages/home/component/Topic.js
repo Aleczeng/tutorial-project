@@ -27,7 +27,6 @@ class Topic extends Component {
     };
 }
 
-
 const mapState = (state) => ({
     list: state.home.get('topicList')
 });
