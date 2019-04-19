@@ -1,0 +1,21 @@
+.my-home {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.my-home-left {
+    margin-left: 15px;
+    padding-top: 30px;
+    float: left;
+    width: 625px;
+}
+
+.my-home-left img {
+    width: 100%;
+    height: auto;
+}
+
+.my-home-right {
+    float: right;
+    width: 240px;
+}

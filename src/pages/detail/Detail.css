@@ -1,0 +1,37 @@
+.logo {
+    max-height: 50px;
+}
+
+.navbar {
+    border-bottom: 1px solid grey;
+}
+
+.btn-outline-primary {
+    border-radius: 25px;
+}
+
+.my-search {
+    border-radius: 25px;
+    border: 1px solid #007bff;
+}
+
+.search-btn {
+    display: inline;
+    position: relative;
+    right: 20%;
+    border: 0;
+    color: #007bff;
+}
+
+.register-btn {
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.write-btn {
+    background: #007bff;
+    color: white;
+    border-radius: 25px;
+}
