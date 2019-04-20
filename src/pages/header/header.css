@@ -33,3 +33,45 @@
     color: white;
     border-radius: 25px;
 }
+
+.search-info {
+    position: absolute;
+    top: 80%;
+    border-radius: 10px;
+    width: 16%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding-bottom: 20px;
+}
+
+.search-info-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #787878;
+}
+
+.search-info-change {
+    float: right;
+    font-size: 12px;
+}
+
+.search-item {
+    line-height: 20px;
+    padding: 0 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    color: #333333;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 20%;
+    display: inline-block;
+}
+
+.search-item-list{
+    width: 100%;
+}

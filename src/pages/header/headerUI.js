@@ -5,6 +5,28 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFeather} from "@fortawesome/free-solid-svg-icons/faFeather";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
+
+const getSearchArea = (show) => {
+    if (show) {
+        return (
+            <div className="search-info">
+                <div className="search-info-title">Popular topic
+                    <span className="search-info-change">Change</span>
+                </div>
+                <div className="search-item-list">
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                    <div className="search-item">item</div>
+                </div>
+            </div>
+        )
+    } else return null;
+};
 const HeaderUI = (props) => {
     return (
         <Fragment>
@@ -17,10 +39,13 @@ const HeaderUI = (props) => {
                         </li>
                     </ul>
                     <div>
-                        <input className="my-search" placeholder="Search"/>
-                        <span className="search-btn" onClick={props.changeSearchStatus}>
+                        <input className="my-search" placeholder="Search"
+                               onFocus={props.changeSearchStatus}
+                               onBlur={props.changeSearchStatus}/>
+                        <span className="search-btn">
                             <FontAwesomeIcon icon={faSearch}/>
                         </span>
+                        {getSearchArea(props.focus)}
                     </div>
                 </div>
                 <ul className="nav justify-content-end">
