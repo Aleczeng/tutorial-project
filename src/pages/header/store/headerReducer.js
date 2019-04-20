@@ -1,8 +1,9 @@
 import {fromJS} from "immutable";
-import {SEARCH_FOCUS} from "./action";
+import {INIT_TOPIC_LIST, SEARCH_FOCUS} from "./action";
 
 const defaultState = fromJS({
-    focus: false
+    focus: false,
+    topicList: []
 });
 
 export default (state = defaultState, action) => {
@@ -13,6 +14,9 @@ export default (state = defaultState, action) => {
             } else {
                 return state.set('focus', false)
             }
+        }
+        case (INIT_TOPIC_LIST): {
+            return state.set('topicList', action.value);
         }
         default:
             return state;
