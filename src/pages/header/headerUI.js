@@ -7,7 +7,7 @@ import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 class HeaderUI extends Component {
     render() {
-        const {focus, focusSearchStatus, blurSearchStatus} = this.props;
+        const {focus, focusSearchStatus, blurSearchStatus, topicList} = this.props;
         return (
             <Fragment>
                 <nav className="navbar navbar-expand">
@@ -20,7 +20,7 @@ class HeaderUI extends Component {
                         </ul>
                         <div>
                             <input className="my-search" placeholder="Search"
-                                   onFocus={focusSearchStatus}
+                                   onFocus={() => focusSearchStatus(topicList)}
                                    onBlur={blurSearchStatus}/>
                             <span className="search-btn">
                             <FontAwesomeIcon icon={faSearch}/>

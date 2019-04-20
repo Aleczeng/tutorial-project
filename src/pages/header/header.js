@@ -20,9 +20,11 @@ const mapState = (state) => ({
 });
 
 const mapDispatch = (dispatch) => ({
-    focusSearchStatus() {
+    focusSearchStatus(topicList) {
+        if (topicList.size != null && topicList.size === 0) {
+            dispatch(getTopicList()); //must be a function
+        }
         dispatch(searchFocus());
-        dispatch(getTopicList()); //must be a function
     },
     blurSearchStatus() {
         dispatch(searchFocus());
