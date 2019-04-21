@@ -1,0 +1,67 @@
+{
+  "topicList": [
+    {
+      "id": 1,
+      "title": "Redux"
+    },
+    {
+      "id": 2,
+      "title": "Router"
+    },
+    {
+      "id": 3,
+      "title": "Axios"
+    },
+    {
+      "id": 4,
+      "title": "Thunk"
+    },
+    {
+      "id": 5,
+      "title": "CSS"
+    }
+  ],
+
+  "articleList": [
+    {
+      "id": 1,
+      "title": "Redux1",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 2,
+      "title": "Redux2",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 3,
+      "title": "Redux3",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 4,
+      "title": "Redux4",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 5,
+      "title": "Redux5",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 6,
+      "title": "Redux6",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 7,
+      "title": "Redux7",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    },
+    {
+      "id": 8,
+      "title": "Redux8",
+      "content": "Content Content Content Content Content Content Content Content Content Content Content..."
+    }
+  ]
+}
