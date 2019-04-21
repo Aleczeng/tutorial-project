@@ -23,6 +23,7 @@
 .topic-wrapper {
     padding: 20px 0 20px 5px;
     overflow: hidden;
+    border-bottom: 1px solid darkgray;
 }
 
 .topic-item {
@@ -53,6 +54,7 @@
     padding-right: 10px;
     margin-bottom: 10px;
 }
+
 .topic-item-last img {
     width: 30px;
     height: 30px;
@@ -67,4 +69,21 @@
     float: left;
     display: block;
     margin-right: 10px;
+}
+
+.article-list {
+    margin-top: 10px;
+    display: flex;
+    border-bottom: 1px solid darkgray;
+}
+
+.article-content {
+    width: 70%;
+    float: left;
+}
+
+.article-list img {
+    width: 30%;
+    height: 100%;
+    float: right;
 }
