@@ -10,13 +10,15 @@ class Header extends PureComponent {
             blurSearchStatus={this.props.blurSearchStatus}
             focus={this.props.focus}
             topicList={this.props.topicList}
+            loginStatus={this.props.loginStatus}
         />
     }
 }
 
 const mapState = (state) => ({
     focus: state.header.get('focus'),
-    topicList: state.header.get('topicList')
+    topicList: state.header.get('topicList'),
+    loginStatus: state.login.get('loginStatus')
 });
 
 const mapDispatch = (dispatch) => ({

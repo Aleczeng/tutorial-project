@@ -1,9 +1,16 @@
 import {fromJS} from "immutable";
+import {LOGIN} from "./action";
 
 const defaultState = fromJS({
     loginStatus: false
 });
 
 export default (state = defaultState, action) => {
-    return state;
+    switch (action.type) {
+        case LOGIN: {
+            return state.set('loginStatus', true);
+        }
+        default:
+            return state
+    }
 }

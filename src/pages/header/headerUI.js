@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom";
 
 class HeaderUI extends PureComponent {
     render() {
-        const {focus, focusSearchStatus, blurSearchStatus, topicList} = this.props;
+        const {focus, focusSearchStatus, blurSearchStatus, topicList, loginStatus} = this.props;
         return (
             <Fragment>
                 <nav className="navbar navbar-expand">
@@ -36,7 +36,8 @@ class HeaderUI extends PureComponent {
                             <a className="nav-link active" href="/">Aa</a>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/login">Login</NavLink>
+                            {!loginStatus ? <NavLink className="nav-link" to="/login">Login</NavLink> :
+                                <NavLink className="nav-link" to="/">Logout</NavLink>}
                         </li>
                         <button className="btn my-2 my-sm-0 register-btn">Register</button>
                         <button className="btn my-2 my-sm-0 write-btn"><FontAwesomeIcon icon={faFeather}/>&nbsp;
