@@ -1,21 +1,24 @@
 import React, {Component, Fragment} from 'react'
 import {connect} from "react-redux";
+import {getMoreList} from "../store/action";
 
 class List extends Component {
+
     render() {
+        const {articlePage} = this.props;
         return (
             <Fragment>
-                {this.getArticleList()}
-                <div className="load-more">More</div>
+                {this.getArticleList(articlePage)}
+                <div className="load-more" onClick={()=>this.props.getMoreList(articlePage)}>More</div>
             </Fragment>
         )
     }
 
     getArticleList = () => {
         return (
-            this.props.articleList.map(article => {
+            this.props.articleList.map((article,index) => {
                 return (
-                    <div className='article-list' key={article.get('id')}>
+                    <div className='article-list' key={index}>
                         <div className='article-content'>
                             <h3>{article.get('title')}</h3>
                             <p>{article.get('content')}</p>
@@ -29,7 +32,14 @@ class List extends Component {
 }
 
 const mapState = (state) => ({
-    articleList: state.home.get('articleList')
+    articleList: state.home.get('articleList'),
+    articlePage: state.home.get('articlePage')
 });
 
-export default connect(mapState, null)(List)
+const mapDispatch = (dispatch) => ({
+    getMoreList(articlePage) {
+        dispatch(getMoreList(articlePage));
+    }
+});
+
+export default connect(mapState, mapDispatch)(List)
