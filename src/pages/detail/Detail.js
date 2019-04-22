@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import DetailUI from "./DetailUI";
 import {connect} from "react-redux";
 
-class Detail extends Component {
+class Detail extends PureComponent {
     render() {
         return <DetailUI/>
     }

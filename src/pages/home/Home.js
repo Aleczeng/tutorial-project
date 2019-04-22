@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import {connect} from "react-redux";
 import HomeUI from "./HomeUI";
 import {getHomeContent} from "./store/action";
 
-class Home extends Component {
+class Home extends PureComponent {
     render() {
         return <HomeUI/>
     }

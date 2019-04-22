@@ -1,24 +1,27 @@
-import React, {Component, Fragment} from 'react'
+import React, {PureComponent, Fragment} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './header.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFeather} from "@fortawesome/free-solid-svg-icons/faFeather";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
+import {NavLink} from "react-router-dom";
 
-class HeaderUI extends Component {
+class HeaderUI extends PureComponent {
     render() {
         const {focus, focusSearchStatus, blurSearchStatus, topicList} = this.props;
         return (
             <Fragment>
                 <nav className="navbar navbar-expand">
-                    <img className="logo float-left" src={require("../../assets/images/logo.png")} alt="logo"/>
-                    <div className="collapse navbar-collapse float-left">
+                    <NavLink to="/">
+                        <img className="logo float-left" src={require("../../assets/images/logo.png")} alt="logo"/>
+                    </NavLink>
+                    <div className="collapse navbar-collapse float-left my-home-nav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Home</a>
+                                <NavLink to="/">Home</NavLink>
                             </li>
                         </ul>
-                        <div>
+                        <div className="my-search-area">
                             <input className="my-search" placeholder="Search"
                                    onFocus={() => focusSearchStatus(topicList)}
                                    onBlur={blurSearchStatus}/>

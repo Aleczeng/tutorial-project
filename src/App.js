@@ -15,15 +15,13 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
-                <Fragment>
-                    <Header/>
-                    <BrowserRouter>
-                        <Fragment>
-                            <Route path='/' exact component={Home}/>
-                            <Route path='/detail' exact component={Detail}/>
-                        </Fragment>
-                    </BrowserRouter>
-                </Fragment>
+                <BrowserRouter>
+                    <Fragment>
+                        <Header/>
+                        <Route path='/' exact component={Home}/>
+                        <Route path='/detail' exact component={Detail}/>
+                    </Fragment>
+                </BrowserRouter>
             </Provider>
         );
     }

@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import {connect} from "react-redux";
 import HeaderUI from "./headerUI";
 import {getTopicList, searchFocus} from "./store/action";
 
-class Header extends Component {
+class Header extends PureComponent {
     render() {
         return <HeaderUI
             focusSearchStatus={this.props.focusSearchStatus}
