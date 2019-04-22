@@ -6,6 +6,7 @@ class List extends Component {
         return (
             <Fragment>
                 {this.getArticleList()}
+                <div className="load-more">More</div>
             </Fragment>
         )
     }
