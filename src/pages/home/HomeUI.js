@@ -6,7 +6,7 @@ import List from "./component/List";
 import Recommend from "./component/Recommend";
 import Writer from "./component/Writer";
 
-const HomeUI = () => {
+const HomeUI = (props) => {
     return (
         <Fragment>
             <div className="my-home">
@@ -19,6 +19,7 @@ const HomeUI = () => {
                     <Recommend/>
                     <Writer/>
                 </div>
+                <div className="back-to-top" onClick={() => window.scroll(0, 0)}>Top</div>
             </div>
         </Fragment>
     )

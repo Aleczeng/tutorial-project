@@ -4,7 +4,7 @@ import {INIT_HOME_CONTENT, SET_HOME_LIST} from "./action";
 const defaultState = fromJS({
     topicList: [],
     articleList: [],
-    articlePage: 1
+    articlePage: 1,
 });
 
 export default (state = defaultState, action) => {

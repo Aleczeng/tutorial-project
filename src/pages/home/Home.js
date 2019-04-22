@@ -13,14 +13,14 @@ class Home extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {}
-};
+const mapStateToProps = (state) => ({
+    showScroll: state.home.get('showScroll'),
+});
 
 const mapDispatchToProps = (dispatch) => ({
     getHomeContent() {
         dispatch(getHomeContent());
-    }
+    },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

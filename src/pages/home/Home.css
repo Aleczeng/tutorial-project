@@ -115,3 +115,18 @@
     min-height: 300px;
     border: 1px solid black;
 }
+
+.back-to-top{
+    position: fixed;
+    right: 17%;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #a5a5a5;
+    background: #a5a5a5;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
