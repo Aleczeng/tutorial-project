@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4417e9e7-779b-4ed6-8f56-2323fd27012e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/api/homeList.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/component/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/component/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/store/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/store/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/store/homeReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/store/homeReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/component/Recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/component/Recommend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/component/Writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/component/Writer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -57,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/component/Recommend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -90,17 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/component/Writer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="138">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+            <state relative-caret-position="362">
+              <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -117,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/store/homeReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="329">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -168,10 +166,8 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.css" />
         <option value="$PROJECT_DIR$/src/pages/home/component/list.js" />
         <option value="$PROJECT_DIR$/src/pages/home/component/recommend.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/component/Writer.js" />
         <option value="$PROJECT_DIR$/src/pages/detail/DetailUI.js" />
         <option value="$PROJECT_DIR$/src/pages/home/HomeUI.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/component/Recommend.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
         <option value="$PROJECT_DIR$/src/pages/detail/Detail.css" />
         <option value="$PROJECT_DIR$/src/pages/header/header.css" />
@@ -183,11 +179,13 @@
         <option value="$PROJECT_DIR$/src/pages/header/store/headerReducer.js" />
         <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
         <option value="$PROJECT_DIR$/src/pages/home/component/Topic.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
         <option value="$PROJECT_DIR$/public/api/homeList.json" />
         <option value="$PROJECT_DIR$/src/pages/home/component/List.js" />
         <option value="$PROJECT_DIR$/src/pages/home/store/action.js" />
         <option value="$PROJECT_DIR$/src/pages/home/store/homeReducer.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/component/Recommend.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/component/Writer.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
       </list>
     </option>
   </component>
@@ -377,12 +375,12 @@
       <workItem from="1555656658573" duration="2512000" />
       <workItem from="1555706270056" duration="20644000" />
       <workItem from="1555837910051" duration="104000" />
-      <workItem from="1555896453501" duration="3400000" />
+      <workItem from="1555896453501" duration="3946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37370000" />
+    <option name="totallyTimeSpent" value="37916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -589,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/api/homeList.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -613,23 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/component/Recommend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/component/Topic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -637,13 +611,6 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/component/Writer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -669,11 +636,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/store/homeReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="329">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/component/Recommend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/component/Writer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
         </state>
       </provider>
     </entry>

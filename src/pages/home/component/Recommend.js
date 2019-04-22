@@ -1,8 +1,14 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 
 class Recommend extends Component {
     render() {
-        return <h1>Recommend</h1>
+        return (
+            <Fragment>
+                <div className="recommend-content">
+                    <p>Recommend</p>
+                </div>
+            </Fragment>
+        )
     }
 }
 

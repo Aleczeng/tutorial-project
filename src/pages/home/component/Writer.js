@@ -1,8 +1,14 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 
 class Writer extends Component {
     render() {
-        return <h1>Writer</h1>
+        return (
+            <Fragment>
+                <div className="writer-content">
+                    <p>Writer list</p>
+                </div>
+            </Fragment>
+        )
     }
 }
 
