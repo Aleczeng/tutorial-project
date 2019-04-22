@@ -8,6 +8,7 @@ import store from './store/store'
 import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Detail from "./pages/detail/Detail";
+import Login from "./pages/login/login";
 
 library.add(faStroopwafel);
 
@@ -20,6 +21,7 @@ class App extends Component {
                         <Header/>
                         <Route path='/' exact component={Home}/>
                         <Route path='/detail' exact component={Detail}/>
+                        <Route path='/login' exact component={Login}/>
                     </Fragment>
                 </BrowserRouter>
             </Provider>

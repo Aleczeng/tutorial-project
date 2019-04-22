@@ -36,7 +36,7 @@ class HeaderUI extends PureComponent {
                             <a className="nav-link active" href="/">Aa</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Login</a>
+                            <NavLink className="nav-link" to="/login">Login</NavLink>
                         </li>
                         <button className="btn my-2 my-sm-0 register-btn">Register</button>
                         <button className="btn my-2 my-sm-0 write-btn"><FontAwesomeIcon icon={faFeather}/>&nbsp;
