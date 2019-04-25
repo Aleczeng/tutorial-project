@@ -22,7 +22,7 @@ class List extends PureComponent {
                     <div className='article-list' key={index}>
                         <div className='article-content'>
                             <h3>
-                                <NavLink to="/detail">{article.get('title')}</NavLink>
+                                <NavLink to={"/detail/" + article.get('id')}>{article.get('title')}</NavLink>
                             </h3>
                             <p>{article.get('content')}</p>
                         </div>

@@ -7,8 +7,8 @@ import {Provider} from "react-redux";
 import store from './store/store'
 import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./pages/home/Home";
-import Detail from "./pages/detail/Detail";
-import Login from "./pages/login/login";
+import Detail from "./pages/detail/loadable";
+import Login from "./pages/login/loadable";
 
 library.add(faStroopwafel);
 
@@ -20,7 +20,7 @@ class App extends Component {
                     <Fragment>
                         <Header/>
                         <Route path='/' exact component={Home}/>
-                        <Route path='/detail' exact component={Detail}/>
+                        <Route path='/detail/:id' exact component={Detail}/>
                         <Route path='/login' exact component={Login}/>
                     </Fragment>
                 </BrowserRouter>
