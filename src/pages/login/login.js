@@ -2,23 +2,34 @@ import React, {Fragment, PureComponent} from 'react'
 import {connect} from "react-redux";
 import './login.css'
 import {login} from "./store/action";
+import {Redirect} from "react-router-dom";
 
 
 class Login extends PureComponent {
     render() {
-        return (
-            <Fragment>
-                <div className="login-wrapper">
-                    <div className="login-box">
-                        <label htmlFor='username'>Username</label>
-                        <input className="form-control" id="username"/>
-                        <label htmlFor='password'>Password</label>
-                        <input className="form-control" id="password"/>
-                        <button className="btn btn-primary login-btn" onClick={this.props.login}>Login</button>
+        const {loginStatus} = this.props;
+        if (!loginStatus) {
+            return (
+                <Fragment>
+                    <div className="login-wrapper">
+                        <div className="login-box">
+                            <label htmlFor='username'>Username</label>
+                            <input className="form-control" id="username"
+                                   ref={(input => this.accountName = input)}/>
+
+                            <label htmlFor='password'>Password</label>
+                            <input className="form-control" id="password" type="password"
+                                   ref={(input => this.password = input)}/>
+                            <button className="btn btn-primary login-btn"
+                                    onClick={() => this.props.login(this.accountName.value, this.password.value)}>Login
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </Fragment>
-        )
+                </Fragment>
+            )
+        } else {
+            return <Redirect to="/"/>
+        }
     }
 }
 
@@ -27,7 +38,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    login() {
+    login(accountName, password) {
+        console.log(accountName, password);
         dispatch(login())
     }
 });

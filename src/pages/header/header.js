@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import {connect} from "react-redux";
 import HeaderUI from "./headerUI";
 import {getTopicList, searchFocus} from "./store/action";
+import {logout} from "../login/store/action";
 
 class Header extends PureComponent {
     render() {
@@ -11,6 +12,7 @@ class Header extends PureComponent {
             focus={this.props.focus}
             topicList={this.props.topicList}
             loginStatus={this.props.loginStatus}
+            logout={this.props.logout}
         />
     }
 }
@@ -31,6 +33,9 @@ const mapDispatch = (dispatch) => ({
     blurSearchStatus() {
         dispatch(searchFocus());
     },
+    logout(){
+        dispatch(logout());
+    }
 });
 
 export default connect(mapState, mapDispatch)(Header);

@@ -4,11 +4,11 @@ import './header.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFeather} from "@fortawesome/free-solid-svg-icons/faFeather";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 class HeaderUI extends PureComponent {
     render() {
-        const {focus, focusSearchStatus, blurSearchStatus, topicList, loginStatus} = this.props;
+        const {focus, focusSearchStatus, blurSearchStatus, topicList, loginStatus, logout} = this.props;
         return (
             <Fragment>
                 <nav className="navbar navbar-expand">
@@ -37,7 +37,7 @@ class HeaderUI extends PureComponent {
                         </li>
                         <li className="nav-item">
                             {!loginStatus ? <NavLink className="nav-link" to="/login">Login</NavLink> :
-                                <NavLink className="nav-link" to="/">Logout</NavLink>}
+                                <Link to="/"><span className="nav-link" onClick={logout}>Logout</span></Link>}
                         </li>
                         <button className="btn my-2 my-sm-0 register-btn">Register</button>
                         <button className="btn my-2 my-sm-0 write-btn"><FontAwesomeIcon icon={faFeather}/>&nbsp;
